@@ -1,0 +1,253 @@
+:root {
+    --theme-color: rgb(91, 30, 36);
+    --bg-color: #E3E7E8;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    /* font-family: 'Open Sans', sans-serif; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.w-3 {
+    width: 33.33%;
+    padding: 0;
+    margin: 0;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add_product {
+    padding: 18px 35px;
+    background-color: var(--theme-color);
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--theme-color);
+}
+
+.cart_icon {
+    font-size: 32px;
+    color: black;
+}
+
+.no {
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    margin: 0;
+    color: white;
+    background-color: var(--theme-color);
+    width: 23px;
+    height: 22px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+
+/* form */
+
+.form {
+    height: 690px;
+    padding: 20px 25px;
+    background-color: #f2f2f2;
+    box-shadow: 1px 1px 5px grey;
+    border-radius: 10px;
+    position: fixed;
+    top: 10px;
+    left: -40%;
+    z-index: 9;
+    transition: 0.5s;
+}
+
+.active-form {
+    left: 10px;
+}
+
+.form h1 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.form h3 {
+    margin: 30px 0 10px 0;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.form input {
+    width: 90%;
+    height: 30px;
+    padding: 0 10px;
+}
+
+.form .add {
+    width: 87%;
+    padding: 18px 0;
+    background-color: var(--theme-color);
+    border: 0;
+    font-weight: 600;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+
+/* cart */
+
+.cart {
+    height: 690px;
+    width: 27%;
+    position: fixed;
+    top: 10px;
+    right: -100%;
+    background-color: #f2f2f2;
+    padding-top: 25px;
+    box-shadow: 1px 1px 5px grey;
+    border-radius: 10px;
+    transition: 0.5s;
+    z-index: 9;
+    overflow-y: scroll;
+}
+
+.cart::-webkit-scrollbar {
+    display: none;
+}
+
+.active-cart {
+    right: 10px;
+}
+
+.total_close_btn {
+    display: flex;
+    align-items: center;
+    /* position: absolute; */
+    /* bottom: 0;
+    left: 0;
+    right: 0; */
+    background-color: var(--theme-color);
+    margin-top: 20px;
+}
+
+.total {
+    width: 50%;
+    padding: 15px;
+    text-align: center;
+    background-color: #d4b01b;
+}
+
+.close {
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}
+
+.listCard {
+    padding: 20px 20px 0 20px;
+}
+
+.listCard li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+
+.listCard li div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listCard li img {
+    width: 40%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.listCard li button {
+    background-color: rgba(164, 164, 164, 0.598);
+    border: none;
+    padding: 4px 7px;
+}
+
+.listCard .count {
+    margin: 0 10px;
+}
+
+
+/* product */
+
+.food {
+    height: 550px;
+    width: 29.5%;
+    border: 1px solid #a5a5a5a8;
+    margin: 22px;
+    border-radius: 10px;
+    color: black;
+    position: relative;
+    background-color: #f2f2f2;
+    transition: 0.5s;
+    box-shadow: 0 0 10px 5px rgba(171, 171, 171, 0.813);
+}
+
+.p_img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.p_btn {
+    width: 90%;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background-color: var(--theme-color);
+    color: white;
+    border: 0;
+    cursor: pointer;
+    margin: 20px 18px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.p_btn:hover {
+    background-color: rgba(164, 26, 40, 0.99);
+}
